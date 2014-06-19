@@ -1,6 +1,5 @@
 # Install GitHub for Mac Puppet Module for Boxen
-[![Build
-Status](https://travis-ci.org/boxen/puppet-github_for_mac.png?branch=master)](https://travis-ci.org/boxen/puppet-github_for_mac)
+[![BuildStatus](https://travis-ci.org/boxen/puppet-github_for_mac.svg?branch=master)](https://travis-ci.org/boxen/puppet-github_for_mac)
 
 GitHub for Mac - The easiest way to share your code with GitHub
 

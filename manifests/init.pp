@@ -1,9 +1,13 @@
 # Public: Install GitHub to /Applications.
 #
 # include github_for_mac
-class github_for_mac {
-  package { 'GitHubForMac':
-    source   => 'https://github-central.s3.amazonaws.com/mac/GitHub%20for%20Mac%20171.zip',
-    provider => 'compressed_app'
+class github_for_mac (
+  $ensure = 'present'
+) {
+  package { 'GitHub':
+    ensure   => $ensure,
+    flavor   => 'zip',
+    provider => 'compressed_app',
+    source   => 'https://central.github.com/mac/latest'
   }
 }
