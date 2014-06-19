@@ -10,4 +10,11 @@ class github_for_mac (
     provider => 'compressed_app',
     source   => 'https://central.github.com/mac/latest'
   }
+
+  file { "${boxen::config::bindir}/github":
+    ensure  => link,
+    target  => '/Applications/GitHub.app/Contents/MacOS/github_cli',
+    mode    => '0755',
+    require => Package['GitHub']
+  }
 }
