@@ -45,9 +45,8 @@ GEM
       json_pure
       rgen (~> 0.6.5)
     puppet-lint (0.3.2)
-    puppetlabs_spec_helper (0.5.1)
+    puppetlabs_spec_helper (0.5.2)
       mocha
-      puppet
       puppet-lint
       rake
       rspec
