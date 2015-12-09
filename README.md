@@ -1,7 +1,7 @@
 **This Boxen module is now deprecated. The advised method for installing applications with Boxen is to now use [homebrew-cask](http://caskroom.io/). Add the following to your manifest to install Github using brewcask:**
 
 ```puppet
-package { 'github': provider => 'brewcask' }
+package { 'github-desktop': provider => 'brewcask' }
 ```
 
 ---
